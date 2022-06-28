@@ -1,9 +1,9 @@
-import { AppProps } from 'next/app';
+import type { AppProps } from "next/app";
 
 function App({ Component, pageProps }: AppProps) {
   return (
     <div suppressHydrationWarning>
-      {typeof window === 'undefined' ? null : <Component {...pageProps} />}
+      {typeof window === "undefined" ? null : <Component {...pageProps} />}
     </div>
   );
 }
